@@ -1,0 +1,240 @@
+body
+{
+    background: rgb(34, 124, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(40, 34, 34);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(184, 5, 243, 0.815);
+}    
+.container .left-Side
+{
+ position: relative;
+ background: #8c6a43;
+ padding: 30px;
+}
+.profiletext
+{
+position: relative; 
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profiletext .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2
+{
+    color: rgb(10, 9, 9);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profiletext h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo
+{
+    padding: 40px;
+}
+.title
+{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #81d2bb;
+}
+.contactInfo ul li span
+{
+    color: rgb(3, 2, 2);
+    font-weight: 300;
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: #81d2bb;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.contactInfo.education h4
+{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #0c0c0c;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #81d2bb;
+}
+
+
+.container .right-Side
+{
+ position: relative;
+ background: rgb(183, 174, 174);
+ padding: 40px;  
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: rgb(250, 250, 250);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: rgb(219, 215, 215);
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+}
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+    color: #435157;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #435157;
+    font-size: 16px;
+}
+.skill .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4
+{
+    text-transform: uppercase;
+    color: #dfe1e5;
+    font-weight: 500;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #435157;
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+}
+.interest ul li
+{
+    list-style: none;
+    color: rgb(234, 231, 231);
+    font-weight: 500;
+    margin: 10px 0;
+}
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr)
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
